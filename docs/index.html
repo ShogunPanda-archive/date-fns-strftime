@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-date-fns.html">date-fns</a><ul class='methods'><li data-type='method'><a href="module-date-fns.html#~strftime">strftime</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>date-fns-strftime</h1><p><a href="http://badge.fury.io/js/date-fns-strftime"><img src="https://badge.fury.io/js/date-fns-strftime.png" alt="Package Version"></a>
+<a href="https://badge.fury.io/bo/date-fns-strftime"><img src="https://badge.fury.io/bo/date-fns-strftime.png" alt="Bower version"></a>
+<a href="https://gemnasium.com/ShogunPanda/date-fns-strftime"><img src="https://gemnasium.com/ShogunPanda/date-fns-strftime.png?travis" alt="Dependency Status"></a>
+<a href="http://travis-ci.org/ShogunPanda/date-fns-strftime"><img src="https://secure.travis-ci.org/ShogunPanda/date-fns-strftime.png?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/ShogunPanda/date-fns-strftime?branch=master"><img src="https://coveralls.io/repos/github/ShogunPanda/date-fns-strftime/badge.svg?branch=master" alt="Coverage Status"></a></p>
+<p>strftime support for <a href="https://date-fns.org/">date-fns</a></p>
+<p>https://github.com/ShogunPanda/date-fns-strftime</p>
+<h2>Introduction</h2><p>date-fns provides the most comprehensive, yet simple and consistent toolset for manipulating JavaScript dates in a browser &amp; Node.js.</p>
+<p>Unfortunately, the library doesn't support one of the most common approaches to format strings: the Unix-Style strftime syntax.</p>
+<p>This plugin aims to fill the gap by reusing internally the <code>format</code> function of <code>date-fns</code>.</p>
+<h2>Installation (NPM)</h2><p>Simply do:</p>
+<pre class="prettyprint source"><code>npm install date-fns-strftime</code></pre><h2>Installation (Bower)</h2><p>Simply do:</p>
+<pre class="prettyprint source"><code>bower install date-fns-strftime</code></pre><h3>Usage</h3><pre class="prettyprint source lang-javascript"><code>const strftime = require(&quot;date-fns-strftime&quot;);
+
+strftime(new Date(), &quot;%m/%d/%y %I:%M %p %Z&quot;); // => &quot;17/01/21 09:17 AM CET&quot;</code></pre><h3>Supported modifiers</h3><p>This plugin supports all modifiers <a href="http://man7.org/linux/man-pages/man3/strftime.3.html">listed here</a> with the exception of the following:</p>
+<ul>
+<li><code>%c</code></li>
+<li><code>%C</code></li>
+<li><code>%E</code></li>
+<li><code>%G</code></li>
+<li><code>%n</code></li>
+<li><code>%O</code></li>
+<li><code>%t</code></li>
+<li><code>%U</code></li>
+<li><code>%x</code></li>
+<li><code>%X</code></li>
+<li><code>%+</code></li>
+</ul>
+<p>And with the addition of the following modifiers:</p>
+<ul>
+<li><code>%L</code>: The milliseconds as decimal-number (range 000 to 999).</li>
+</ul>
+<h2>Supported implementations.</h2><p>date-fns-strftime supports and has been tested on <a href="http://nodejs.org">NodeJS</a> 6.0+.</p>
+<h2>API Documentation</h2><p>The API documentation can be found <a href="https://shogunpanda.github.io/date-fns-strftime">here</a>.</p>
+<h2>Contributing to date-fns-strftime</h2><ul>
+<li>Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.</li>
+<li>Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.</li>
+<li>Fork the project.</li>
+<li>Start a feature/bugfix branch.</li>
+<li>Commit and push until you are happy with your contribution.</li>
+<li>Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.</li>
+</ul>
+<h2>Copyright</h2><p>Copyright (C) 2017 and above Shogun <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x73;&#104;&#x6f;&#103;&#117;&#110;&#64;&#x63;&#111;&#119;&#116;&#x65;&#x63;&#104;&#x2e;&#x69;&#x74;">&#x73;&#104;&#x6f;&#103;&#117;&#110;&#64;&#x63;&#111;&#119;&#116;&#x65;&#x63;&#104;&#x2e;&#x69;&#x74;</a>.</p>
+<p>Licensed under the MIT license, which can be found at http://opensource.org/licenses/MIT.</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sat Jan 21 2017 10:05:29 GMT+0100 (CET) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

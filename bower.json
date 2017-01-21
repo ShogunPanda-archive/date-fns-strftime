@@ -1,0 +1,20 @@
+{
+  "name": "date-fns-strftime",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ShogunPanda/date-fns-strftime",
+  "authors": [
+    "Shogun <shogun@cowtech.it> (https://cowtech.it/)"
+  ],
+  "description": "strftime support for date-fns",
+  "main": "index.js",
+  "keywords": ["date-fns", "strftime", "date", "time", "datetime"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "date-fns": "^1"
+  }
+}

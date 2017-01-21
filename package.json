@@ -1,0 +1,53 @@
+{
+  "name": "date-fns-strftime",
+  "version": "1.0.0",
+  "description": "strftime support for date-fns",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "postpublish": "git push origin --tags && git push origin",
+    "test": "./node_modules/.bin/mocha tests.js",
+    "lint": "./node_modules/.bin/eslint index.js tests.js",
+    "coverage": "./node_modules/.bin/nyc npm run test",
+    "travis-ci": "./node_modules/.bin/nyc --reporter=lcov npm run test",
+    "update-coveralls": "cat coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "docs": "./node_modules/.bin/jsdoc -c .jsdoc.json -t ./node_modules/minami -R README.md -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShogunPanda/date-fns-strftime"
+  },
+  "keywords": ["date-fns", "strftime", "date", "time", "datetime"],
+  "author": "Shogun <shogun@cowtech.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShogunPanda/date-fns-strftime/issues"
+  },
+  "homepage": "https://github.com/ShogunPanda/date-fns-strftime",
+  "dependencies": {
+    "date-fns": "^1"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "coveralls": "~2.11.15",
+    "eslint": "~3.14.0",
+    "minami": "~1.1.1",
+    "nyc": "~10.1.2",
+    "jsdoc": "~3.4.3",
+    "mocha": "~3.2.0"
+  },
+  "nyc": {
+    "exclude": [
+      "tests.js"
+    ],
+    "reporter": [
+      "html",
+      "lcov",
+      "text-summary"
+    ]
+  }
+}
