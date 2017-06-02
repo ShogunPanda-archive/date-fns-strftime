@@ -4,8 +4,7 @@
 #
 
 language: node_js
-script: npm run travis-ci
-after_success: npm run update-coveralls
+script: yarn run ci
 node_js:
   - "6"
 notifications:

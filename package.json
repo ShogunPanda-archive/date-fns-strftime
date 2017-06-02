@@ -5,23 +5,32 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "index.d.ts",
     "README.md",
     "CHANGELOG.md"
   ],
+  "types": "index.d.ts",
   "scripts": {
-    "postpublish": "git push origin --tags && git push origin",
-    "test": "./node_modules/.bin/mocha tests.js",
-    "lint": "./node_modules/.bin/eslint index.js tests.js",
-    "coverage": "./node_modules/.bin/nyc npm run test",
-    "travis-ci": "./node_modules/.bin/nyc --reporter=lcov npm run test",
-    "update-coveralls": "cat coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "test": "./node_modules/.bin/jest",
+    "test-watch": "./node_modules/.bin/jest --watch",
+    "lint": "./node_modules/.bin/eslint index.js index.test.js",
+    "sanity": "npm run lint && npm run test",
+    "cleanup": "rm -rf coverage",
+    "ci": "npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "postpublish": "git push origin && git push origin -f --tags",
     "docs": "./node_modules/.bin/jsdoc -c .jsdoc.json -t ./node_modules/minami -R README.md -r"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ShogunPanda/date-fns-strftime"
   },
-  "keywords": ["date-fns", "strftime", "date", "time", "datetime"],
+  "keywords": [
+    "date-fns",
+    "strftime",
+    "date",
+    "time",
+    "datetime"
+  ],
   "author": "Shogun <shogun@cowtech.it>",
   "license": "MIT",
   "bugs": {
@@ -32,22 +41,24 @@
     "date-fns": "^1"
   },
   "devDependencies": {
-    "chai": "~3.5.0",
-    "coveralls": "~2.11.15",
-    "eslint": "~3.14.0",
-    "minami": "~1.1.1",
-    "nyc": "~10.1.2",
-    "jsdoc": "~3.4.3",
-    "mocha": "~3.2.0"
+    "coveralls": "~2.13",
+    "eslint": "~3.19",
+    "eslint-config-cowtech": "~3.19",
+    "jest": "~20.0",
+    "jsdoc": "~3.4",
+    "minami": "~1.2"
   },
-  "nyc": {
-    "exclude": [
-      "tests.js"
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
     ],
-    "reporter": [
-      "html",
+    "coverageReporters": [
+      "json",
       "lcov",
-      "text-summary"
+      "text",
+      "html"
     ]
   }
+
 }
