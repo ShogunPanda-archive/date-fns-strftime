@@ -4,6 +4,6 @@
  */
 
 declare module "date-fns-strftime" {
-  function strftime(date: Date | string | number, format?: string = "%FT%T.%L%Z", options?: {locale?: Object}): string;
+  function strftime(date: Date | string | number, format?: string, options?: {locale?: Object}): string;
   export = strftime;
 }
