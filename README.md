@@ -1,10 +1,9 @@
 # date-fns-strftime
 
-[![Package Version](https://badge.fury.io/js/date-fns-strftime.png)](http://badge.fury.io/js/date-fns-strftime)
-[![Bower version](https://badge.fury.io/bo/date-fns-strftime.png)](https://badge.fury.io/bo/date-fns-strftime)
-[![Dependency Status](https://gemnasium.com/ShogunPanda/date-fns-strftime.png?travis)](https://gemnasium.com/ShogunPanda/date-fns-strftime)
-[![Build Status](https://secure.travis-ci.org/ShogunPanda/date-fns-strftime.png?branch=master)](http://travis-ci.org/ShogunPanda/date-fns-strftime)
-[![Coverage Status](https://coveralls.io/repos/github/ShogunPanda/date-fns-strftime/badge.svg?branch=master)](https://coveralls.io/github/ShogunPanda/date-fns-strftime?branch=master)
+[![Package Version](https://img.shields.io/npm/v/date-fns-strftime.svg)](https://npmjs.com/package/date-fns-strftime)
+[![Dependency Status](https://img.shields.io/gemnasium/ShogunPanda/date-fns-strftime.svg)](https://gemnasium.com/ShogunPanda/date-fns-strftime)
+[![Build Status](https://img.shields.io/travis/ShogunPanda/date-fns-strftime.svg)](http://travis-ci.org/ShogunPanda/date-fns-strftime)
+[![Coverage Status](https://img.shields.io/coveralls/github/ShogunPanda/date-fns-strftime.svg)](https://coveralls.io/github/ShogunPanda/date-fns-strftime)
 
 strftime support for [date-fns](https://date-fns.org/)
 
@@ -83,4 +82,4 @@ The API documentation can be found [here](https://shogunpanda.github.io/date-fns
 
 Copyright (C) 2017 and above Shogun <shogun@cowtech.it>.
 
-Licensed under the MIT license, which can be found at http://opensource.org/licenses/MIT.
+Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
