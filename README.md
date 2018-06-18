@@ -9,6 +9,10 @@ strftime support for [date-fns](https://date-fns.org/)
 
 https://github.com/ShogunPanda/date-fns-strftime
 
+## END OF DEVELOPMENT NOTICE
+
+# This module has been discontinued.
+
 ## Introduction
 
 date-fns provides the most comprehensive, yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js.
@@ -36,30 +40,30 @@ bower install date-fns-strftime
 ### Usage
 
 ```javascript
-const strftime = require("date-fns-strftime");
+const strftime = require("date-fns-strftime")
 
-strftime(new Date(), "%m/%d/%y %I:%M %p %Z"); // => "17/01/21 09:17 AM CET"
+strftime(new Date(), "%m/%d/%y %I:%M %p %Z") // => "17/01/21 09:17 AM CET"
 ```
 
 ### Supported modifiers
 
 This plugin supports all modifiers [listed here](http://man7.org/linux/man-pages/man3/strftime.3.html) with the exception of the following:
 
-* `%c`
-* `%C`
-* `%E`
-* `%G`
-* `%n`
-* `%O`
-* `%t`
-* `%U`
-* `%x`
-* `%X`
-* `%+`
+- `%c`
+- `%C`
+- `%E`
+- `%G`
+- `%n`
+- `%O`
+- `%t`
+- `%U`
+- `%x`
+- `%X`
+- `%+`
 
 And with the addition of the following modifiers:
 
-* `%L`: The milliseconds as decimal-number (range 000 to 999).
+- `%L`: The milliseconds as decimal-number (range 000 to 999).
 
 ## Supported implementations.
 
@@ -71,15 +75,15 @@ The API documentation can be found [here](https://shogunpanda.github.io/date-fns
 
 ## Contributing to date-fns-strftime
 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+- Fork the project.
+- Start a feature/bugfix branch.
+- Commit and push until you are happy with your contribution.
+- Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 
 ## Copyright
 
-Copyright (C) 2017 and above Shogun <shogun@cowtech.it>.
+Copyright (C) 2017 and above Shogun <mailto:shogun@cowtech.it>.
 
 Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
