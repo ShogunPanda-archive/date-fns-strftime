@@ -1,17 +1,8 @@
 # date-fns-strftime
 
-[![Package Version](https://img.shields.io/npm/v/date-fns-strftime.svg)](https://npmjs.com/package/date-fns-strftime)
-[![Dependency Status](https://img.shields.io/gemnasium/ShogunPanda/date-fns-strftime.svg)](https://gemnasium.com/ShogunPanda/date-fns-strftime)
-[![Build Status](https://img.shields.io/travis/ShogunPanda/date-fns-strftime.svg)](http://travis-ci.org/ShogunPanda/date-fns-strftime)
-[![Coverage Status](https://img.shields.io/coveralls/github/ShogunPanda/date-fns-strftime.svg)](https://coveralls.io/github/ShogunPanda/date-fns-strftime)
+## END OF DEVELOPMENT NOTICE - This package has been discontinued
 
 strftime support for [date-fns](https://date-fns.org/)
-
-https://github.com/ShogunPanda/date-fns-strftime
-
-## END OF DEVELOPMENT NOTICE
-
-# This module has been discontinued.
 
 ## Introduction
 
@@ -40,9 +31,9 @@ bower install date-fns-strftime
 ### Usage
 
 ```javascript
-const strftime = require("date-fns-strftime")
+const strftime = require('date-fns-strftime')
 
-strftime(new Date(), "%m/%d/%y %I:%M %p %Z") // => "17/01/21 09:17 AM CET"
+strftime(new Date(), '%m/%d/%y %I:%M %p %Z') // => "17/01/21 09:17 AM CET"
 ```
 
 ### Supported modifiers
